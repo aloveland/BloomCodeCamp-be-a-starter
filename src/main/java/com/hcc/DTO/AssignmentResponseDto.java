@@ -90,6 +90,21 @@ public class AssignmentResponseDto {
         this.codeReviewer = reviewer;
     }
 
+    @Override
+    public String toString() {
+        return "AssignmentResponseDto{" +
+                "id=" + id +
+                ", status='" + status + '\'' +
+                ", number=" + number +
+                ", githubUrl='" + githubUrl + '\'' +
+                ", branch='" + branch + '\'' +
+                ", reviewVideoUrl='" + reviewVideoUrl + '\'' +
+                ", user=" + (user != null ? user.getId() : "null") + 
+                ", codeReviewer=" + (codeReviewer != null ? codeReviewer.getId() : "null") +
+                '}';
+    }
+
+
 }
 
 
