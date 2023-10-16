@@ -26,8 +26,6 @@ public class User implements UserDetails {
     @Column(name = "password")
     private String password;
 
-    // Assuming authorities is a list of strings representing authority names.
-    // Adjust the generic type if it's supposed to be a list of some other type.
 
     public User(){
 
