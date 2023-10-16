@@ -15,16 +15,15 @@ import java.util.List;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // Assuming you want to auto-generate the ID
     private Long id;
 
-    @Column(name = "cohort_start_date")  // Assuming the column name is 'cohort_start_date'
+    @Column(name = "cohortStartDate")
     private Date cohortStartDate;
 
-    @Column(name = "username")  // Assuming the column name is 'username'
+    @Column(name = "username")
     private String username;
 
-    @Column(name = "password")  // Assuming the column name is 'password'
+    @Column(name = "password")
     private String password;
 
     // Assuming authorities is a list of strings representing authority names.
@@ -39,7 +38,7 @@ public class User implements UserDetails {
         this.password = password;
     }
     @ElementCollection
-    @Column(name = "authorities")  // Assuming the column name is 'authorities'
+    @Column(name = "authorities")
     private List<String> authorities;
 
 

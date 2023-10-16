@@ -19,8 +19,6 @@ public class Authority {
     @JoinColumn(name = "userId")
     private User user;
 
-    // Constructors, getters, setters, etc.
-
     public Authority() {
     }
     public Authority(String authority){

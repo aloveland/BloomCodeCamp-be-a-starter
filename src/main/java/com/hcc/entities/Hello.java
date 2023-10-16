@@ -2,7 +2,6 @@ package com.hcc.entities;
 
 import javax.persistence.*;
 
-// this is an example entity feel free to delete this once you have created your own.
 @Entity
 @Table(name = "greetings")
 public class Hello {
