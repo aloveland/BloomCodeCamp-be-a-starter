@@ -17,7 +17,7 @@ public class User implements UserDetails {
     @Id
     private Long id;
 
-    @Column(name = "cohortStartDate")
+    @Column(name = "cohort_start_date")
     private Date cohortStartDate;
 
     @Column(name = "username")
@@ -96,7 +96,7 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> roles = new ArrayList<>();
-        roles.add(new Authority("role_student"));
+        roles.add((GrantedAuthority) new Authority("role_student"));
         return roles;
     }
 

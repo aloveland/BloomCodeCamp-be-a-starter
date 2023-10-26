@@ -23,6 +23,7 @@ public class JWTUtils {
 //    // get the jwt secret from the properties file
     @Value("${jwt.secret}")
     private String secret;
+
 //
 //    //get username from token
     public String getUsernameFromToken(String token){

@@ -1,7 +1,5 @@
 package com.hcc.entities;
 
-import com.hcc.entities.User;
-
 import javax.persistence.*;
 
 @Entity
@@ -17,36 +15,36 @@ public class Assignment {
     @Column(name = "number")
     private Integer number;
 
-    @Column(name = "githubUrl")
+    @Column(name = "github_url")
     private String githubUrl;
 
     @Column(name = "branch")
     private String branch;
 
-    @Column(name = "reviewVideoUrl")
+    @Column(name = "review_video_url")
     private String reviewVideoUrl;
 
     @ManyToOne
-    @JoinColumn(name = "userId")
-    private User user;
+    @JoinColumn(name = "user_id")
+    private Long user;
 
     @ManyToOne
-    @JoinColumn(name = "codeReviewerId")
-    private User codeReviewer;
+    @JoinColumn(name = "code_reviewer_id")
+    private Long codeReviewerId;
 
 
 
     public Assignment() {
     }
 
-    public Assignment(String status, Integer number, String githubUrl, String branch, String reviewVideoUrl, User user, User codeReviewer) {
+    public Assignment(String status, Integer number, String githubUrl, String branch, String reviewVideoUrl, Long user, Long codeReviewerId) {
         this.status = status;
         this.number = number;
         this.githubUrl = githubUrl;
         this.branch = branch;
         this.reviewVideoUrl = reviewVideoUrl;
         this.user = user;
-        this.codeReviewer = codeReviewer;
+        this.codeReviewerId = codeReviewerId;
     }
 
     public Long getId() {
@@ -97,19 +95,34 @@ public class Assignment {
         this.reviewVideoUrl = reviewVideoUrl;
     }
 
-    public User getUser() {
+    public Long getUserId() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUserId(Long user) {
         this.user = user;
     }
 
-    public User getCodeReviewer() {
-        return codeReviewer;
+    public long getCodeReviewerId(){
+        return this.codeReviewerId;
     }
 
-    public void setCodeReviewer(User codeReviewer) {
-        this.codeReviewer = codeReviewer;
+    public void setCodeReviewerId(Long id){
+        this.codeReviewerId = id;
     }
+    @Override
+    public String toString() {
+        return "Assignment{" +
+                "id=" + id +
+                ", status='" + status + '\'' +
+                ", number=" + number +
+                ", githubUrl='" + githubUrl + '\'' +
+                ", branch='" + branch + '\'' +
+                ", reviewVideoUrl='" + reviewVideoUrl + '\'' +
+                ", user=" + user +
+                ", codeReviewerId=" + codeReviewerId +
+                '}';
+    }
+
+
 }
