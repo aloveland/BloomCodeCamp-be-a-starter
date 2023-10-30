@@ -19,6 +19,7 @@ class BackendApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+	/*
 	@Test
 	public void testGetAssignmentByUser() throws SQLException {
 		String JDBC_URL = "jdbc:postgresql://bloomtechlabs.c48jjdfk1at5.us-east-1.rds.amazonaws.com:5432/bloomtechlabs";
@@ -33,4 +34,5 @@ class BackendApplicationTests {
 		}
 		Assertions.assertFalse(result.isEmpty(), "No assignments found for the given user.");
 	}
+	 */
 }
