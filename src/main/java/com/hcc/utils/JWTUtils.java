@@ -20,8 +20,8 @@ public class JWTUtils {
     public static final long JWT_TOKEN_VALIDITY = 6000 * 60000 * 24;
 
     // get the jwt secret from the properties file
-    @Value("${jwt.secret}")
-    private String secret;
+    //@Value("${jwt.secret}")
+    private String secret = "wigfjwriofgjweriogfj34itj349t8gerug8934yhtgiuoerhgjeuiofbhjertjklgjIOUJIOUJHUIOYH3453543564FHGFfg";
 
     //get username from token
     public String getUsernameFromToken(String token){

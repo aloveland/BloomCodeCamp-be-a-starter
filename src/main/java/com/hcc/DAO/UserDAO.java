@@ -6,6 +6,7 @@ import com.hcc.exceptions.AuthenticationException;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -90,4 +91,23 @@ public class UserDAO {
             throw new RuntimeException(e);
         }
     }
+    public User getUserByUsername(String username) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE username = ?")) {
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                User user = new User();
+                user.setId(resultSet.getLong("id"));
+                user.setUsername(resultSet.getString("username"));
+                // ... set other User fields ...
+                return user;
+            } else {
+                throw new RuntimeException("User not found with username: " + username);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
+
