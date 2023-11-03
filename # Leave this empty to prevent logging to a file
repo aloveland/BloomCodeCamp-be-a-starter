@@ -1,1 +1,27 @@
 2023-11-03 02:31:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h52m16s212ms341µs400ns).
+2023-11-03 03:16:14 [main] INFO  com.hcc.BackendApplication - Starting BackendApplication using Java 17.0.8.1 on DESKTOP-KQ164VM with PID 24216 (C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter\build\classes\java\main started by ajlov in C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter)
+2023-11-03 03:16:14 [main] DEBUG com.hcc.BackendApplication - Running with Spring Boot v2.7.8-SNAPSHOT, Spring v5.3.25
+2023-11-03 03:16:14 [main] INFO  com.hcc.BackendApplication - The following 1 profile is active: "dev"
+2023-11-03 03:16:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-03 03:16:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2023-11-03 03:16:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-03 03:16:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-03 03:16:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-03 03:16:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-03 03:16:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2008 ms
+2023-11-03 03:16:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-03 03:16:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-11-03 03:16:17 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-03 03:16:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-11-03 03:16:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-11-03 03:16:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-03 03:16:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-03 03:16:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03 03:16:19 [main] DEBUG com.hcc.filters.jwtFilter - Filter 'jwtFilter' configured for use
+2023-11-03 03:16:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-03 03:16:19 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64cdc310, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d563c13, org.springframework.security.web.context.SecurityContextPersistenceFilter@1be4a7e3, org.springframework.security.web.header.HeaderWriterFilter@7db2b614, org.springframework.security.web.authentication.logout.LogoutFilter@c478e4e, com.hcc.utils.JwtAuthenticationFilter@510a2c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@544e6b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ba8ef4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14fe085b, org.springframework.security.web.session.SessionManagementFilter@2c1a95a2, org.springframework.security.web.access.ExceptionTranslationFilter@1b6683c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e8fe7db]
+2023-11-03 03:16:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-03 03:16:19 [main] INFO  com.hcc.BackendApplication - Started BackendApplication in 6.004 seconds (JVM running for 7.487)
+2023-11-03 03:16:31 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-03 03:16:31 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-03 03:16:31 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
