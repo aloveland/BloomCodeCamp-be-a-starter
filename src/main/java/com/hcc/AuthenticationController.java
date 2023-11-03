@@ -64,7 +64,7 @@ public class AuthenticationController {
 
             final User user = userDao.getUserByUsername(authenticationRequest.getUsername());
             final String jwt = jwtUtil.generateToken(user);
-
+            //adding for commit
             return ResponseEntity.ok(new com.hcc.AuthenticationResponse(jwt));
         }
     }
