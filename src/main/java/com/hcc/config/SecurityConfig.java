@@ -49,8 +49,10 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // Make the session stateless
 
         // Add JWT filter before the UsernamePasswordAuthenticationFilter
-        http.addFilterBefore(new JwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
     }
+
+
 
     @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
     @Override

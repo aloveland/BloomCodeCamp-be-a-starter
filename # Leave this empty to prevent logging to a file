@@ -1,1 +1,7 @@
-2023-11-03 02:31:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h52m16s212ms341µs400ns).
+2023-11-05 14:59:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19h51m22s390ms799µs600ns).
+2023-11-05 15:00:03 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-05 15:00:23 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTIxNDQwNCwiZXhwIjoxNjk5MjY0NDY5fQ.dGD3vBKtsf_dErS_07YyctjKR8ZSA_3Z5YhxOWe7k54
+2023-11-05 15:00:23 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTIxNDQwNCwiZXhwIjoxNjk5MjY0NDY5fQ.dGD3vBKtsf_dErS_07YyctjKR8ZSA_3Z5YhxOWe7k54
+2023-11-05 15:00:23 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@768d2c7e
+2023-11-05 15:00:23 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@cfbce6e]
+2023-11-05 15:23:09 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m5s10ms578µs600ns).

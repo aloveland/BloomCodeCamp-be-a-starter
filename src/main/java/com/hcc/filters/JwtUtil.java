@@ -6,6 +6,7 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -20,8 +21,9 @@ import java.util.function.Function;
 public class JwtUtil implements Serializable {
     public static final long JWT_TOKEN_VALIDITY = 5 * 24 * 60 * 60;
 
+
     @Value("${jwt.secret}")
-    private String secret;
+    private String secret = "wigfjwriofgjweriogfj34itj349t8gerug8934yhtgiuoerhgjeuiofbhjertjklgjIOUJIOUJHUIOYH3453543564FHGFfg";
 
     public String getUsernameFromToken(String token) {
         return getClaimFromToken(token, Claims::getSubject);
@@ -30,6 +32,7 @@ public class JwtUtil implements Serializable {
     public Date getIssuedAtDateFromToken(String token) {
         return getClaimFromToken(token, Claims::getIssuedAt);
     }
+
 
 
     public <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
