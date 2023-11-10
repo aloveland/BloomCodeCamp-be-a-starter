@@ -64,7 +64,6 @@ public class UserLoginActivity {
     private User retrieveUserByUsername(String username) {
         User user = new User();
         user.setUsername(username);
-        // Set other user properties as needed
         return user;
     }
 

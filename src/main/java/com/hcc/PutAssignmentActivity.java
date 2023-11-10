@@ -27,14 +27,13 @@ public class PutAssignmentActivity {
         logger.info("INSIDE UPDATE ASSIGNMENT BY ID CONTROLLER -----");
         try (Connection connection = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD)) {
             assignmentDAO = new AssignmentDAO(connection);
-            // Load the existing assignment
+
             Assignment existingAssignment = assignmentDAO.getAssignmentById(id);
             if (existingAssignment == null) {
-                // Handle not found error, possibly throw an exception or return an error response
+
                 return null;
             }
 
-            // Update the fields of the existing assignment with the values from updatedAssignment
             existingAssignment.setBranch(updatedAssignment.getBranch());
             existingAssignment.setReviewVideoUrl(updatedAssignment.getReviewVideoUrl());
             existingAssignment.setGithubUrl(updatedAssignment.getGithubUrl());
@@ -44,13 +43,13 @@ public class PutAssignmentActivity {
             existingAssignment.setReviewVideoUrl(updatedAssignment.getReviewVideoUrl());
             existingAssignment.setStatus(updatedAssignment.getStatus());
 
-            // Save the updated assignment
+
             Assignment savedAssignment = assignmentDAO.updateAssignment(existingAssignment);
 
             return savedAssignment;
         }catch (SQLException e) {
             e.printStackTrace();
-            // You may want to return a more user-friendly error response
+
         }
         return new Assignment();
     }

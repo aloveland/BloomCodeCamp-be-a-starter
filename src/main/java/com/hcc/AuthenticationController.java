@@ -41,7 +41,7 @@ public class AuthenticationController {
 
     private UserDAO userDao;
 
-    @PostMapping
+    @PostMapping("/login")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
         jwtUtil = new JWTUtils();
         authenticationManager = new AuthenticationManager() {

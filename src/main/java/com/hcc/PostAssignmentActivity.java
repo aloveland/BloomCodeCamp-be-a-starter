@@ -27,14 +27,14 @@ public class PostAssignmentActivity {
         try (Connection connection = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD)) {
             assignmentDAO = new AssignmentDAO(connection);
 
-            // Save the new assignment
+
 
             return assignmentDAO.saveAssignment(newAssignment);
         }catch (SQLException e) {
             e.printStackTrace();
-            // You may want to return a more user-friendly error response
+
         }
-        return new Assignment();  // Return an empty assignment on failure, you might want to handle this differently
+        return new Assignment();
     }
 
 }

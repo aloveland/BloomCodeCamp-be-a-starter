@@ -40,15 +40,15 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable() // Disable CSRF protection as we are using tokens
+                .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/authenticate").permitAll() // Allow everyone to access the authenticate endpoint
-                .anyRequest().authenticated() // All other requests need to be authenticated
+                .antMatchers("/authenticate/**").permitAll()
+                .anyRequest().authenticated()
                 .and()
                 .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // Make the session stateless
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
-        // Add JWT filter before the UsernamePasswordAuthenticationFilter
+
         http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
     }
 

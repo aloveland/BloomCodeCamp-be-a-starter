@@ -1,1 +1,313 @@
-2023-11-08 01:00:04 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h45m47s739ms133µs600ns).
+2023-11-10 05:16:52 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d17m12s505ms255µs200ns).
+2023-11-10 05:29:04 [main] INFO  com.hcc.BackendApplication - Starting BackendApplication using Java 17.0.8.1 on DESKTOP-KQ164VM with PID 14748 (C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter\build\classes\java\main started by ajlov in C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter)
+2023-11-10 05:29:04 [main] DEBUG com.hcc.BackendApplication - Running with Spring Boot v2.7.8-SNAPSHOT, Spring v5.3.25
+2023-11-10 05:29:04 [main] INFO  com.hcc.BackendApplication - The following 1 profile is active: "dev"
+2023-11-10 05:29:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-10 05:29:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2023-11-10 05:29:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-10 05:29:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-10 05:29:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-10 05:29:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-10 05:29:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3127 ms
+2023-11-10 05:29:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-10 05:29:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-11-10 05:29:08 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-10 05:29:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-11-10 05:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-11-10 05:29:09 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-10 05:29:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-10 05:29:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 05:29:11 [main] DEBUG com.hcc.filters.jwtFilter - Filter 'jwtFilter' configured for use
+2023-11-10 05:29:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-10 05:29:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45017263, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6054ac20, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f498f21, org.springframework.security.web.header.HeaderWriterFilter@374ba492, org.springframework.security.web.authentication.logout.LogoutFilter@544e6b, com.hcc.filters.jwtFilter@629600d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50caeb4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1860b107, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32a074ed, org.springframework.security.web.session.SessionManagementFilter@6958d5d0, org.springframework.security.web.access.ExceptionTranslationFilter@185bf6e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66e218d8]
+2023-11-10 05:29:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-10 05:29:12 [main] INFO  com.hcc.BackendApplication - Started BackendApplication in 9.316 seconds (JVM running for 14.735)
+2023-11-10 05:29:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 05:29:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-10 05:29:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-11-10 05:29:41 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:30:42 [main] INFO  com.hcc.BackendApplication - Starting BackendApplication using Java 17.0.8.1 on DESKTOP-KQ164VM with PID 19680 (C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter\build\classes\java\main started by ajlov in C:\Users\ajlov\BloomTech\forkedLabs\BloomCodeCamp-be-a-starter)
+2023-11-10 05:30:42 [main] DEBUG com.hcc.BackendApplication - Running with Spring Boot v2.7.8-SNAPSHOT, Spring v5.3.25
+2023-11-10 05:30:42 [main] INFO  com.hcc.BackendApplication - The following 1 profile is active: "dev"
+2023-11-10 05:30:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-10 05:30:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2023-11-10 05:30:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-11-10 05:30:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-11-10 05:30:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-11-10 05:30:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-11-10 05:30:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2552 ms
+2023-11-10 05:30:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-10 05:30:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-11-10 05:30:46 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-10 05:30:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-11-10 05:30:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-11-10 05:30:47 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-10 05:30:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-10 05:30:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 05:30:49 [main] DEBUG com.hcc.filters.jwtFilter - Filter 'jwtFilter' configured for use
+2023-11-10 05:30:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-10 05:30:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29eaf100, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c1a6db1, org.springframework.security.web.context.SecurityContextPersistenceFilter@50caeb4b, org.springframework.security.web.header.HeaderWriterFilter@1f365a26, org.springframework.security.web.authentication.logout.LogoutFilter@65a66a75, com.hcc.filters.jwtFilter@12ebfb2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c7c07ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4136b193, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dac6bc3, org.springframework.security.web.session.SessionManagementFilter@7169d668, org.springframework.security.web.access.ExceptionTranslationFilter@374ba492, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@478fe415]
+2023-11-10 05:30:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-10 05:30:50 [main] INFO  com.hcc.BackendApplication - Started BackendApplication in 8.61 seconds (JVM running for 10.709)
+2023-11-10 05:30:57 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 05:30:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-11-10 05:30:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-11-10 05:30:57 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:33:23 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTQwMjYxMiwiZXhwIjoxNjk5NDUyNjc3fQ.kCN7rwitlB6-xkmNzZGNgLvNmjf2NG2B-HKzPeuI8HU
+2023-11-10 05:33:23 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-11-08T14:11:17Z. Current time: 2023-11-10T10:33:23Z, a difference of 159726393 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:448)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610)
+	at com.hcc.utils.JwtUtil.getAllClaimsFromToken(JwtUtil.java:49)
+	at com.hcc.utils.JwtUtil.getClaimFromToken(JwtUtil.java:39)
+	at com.hcc.utils.JwtUtil.getUsernameFromToken(JwtUtil.java:29)
+	at com.hcc.filters.jwtFilter.doFilterInternal(jwtFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-10 05:33:55 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMjI1OCwiZXhwIjoxNjk5NjYyMzIzfQ.q9XCCJMrkQ7dAFKLTO_gBW9i4R5W3oOdWy5CXZfvXV8
+2023-11-10 05:33:55 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMjI1OCwiZXhwIjoxNjk5NjYyMzIzfQ.q9XCCJMrkQ7dAFKLTO_gBW9i4R5W3oOdWy5CXZfvXV8
+2023-11-10 05:33:55 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@378793d7
+2023-11-10 05:33:55 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@6889b295]
+2023-11-10 05:33:55 [http-nio-8080-exec-6] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 05:40:16 [http-nio-8080-exec-9] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:40:41 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:40:50 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:47:43 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:48:00 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:48:06 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:49:33 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTQwODA5MCwiZXhwIjoxNjk5NDU4MTU1fQ.nUVr5Dse6ehHxJn0-FZPDRpyNygeHAxbvkMuh2SP0JI
+2023-11-10 05:49:33 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-11-08T15:42:35Z. Current time: 2023-11-10T10:49:33Z, a difference of 155218453 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:448)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610)
+	at com.hcc.utils.JwtUtil.getAllClaimsFromToken(JwtUtil.java:49)
+	at com.hcc.utils.JwtUtil.getClaimFromToken(JwtUtil.java:39)
+	at com.hcc.utils.JwtUtil.getUsernameFromToken(JwtUtil.java:29)
+	at com.hcc.filters.jwtFilter.doFilterInternal(jwtFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-10 05:50:07 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:07 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:07 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@32f65a41
+2023-11-10 05:50:08 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@61e49117]
+2023-11-10 05:50:08 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-10 05:50:19 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:19 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:19 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@5a654d8
+2023-11-10 05:50:19 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@18323e0b]
+2023-11-10 05:50:19 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-10 05:50:50 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:50 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:50:50 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@5da7b14
+2023-11-10 05:50:50 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@1fbceb1a]
+2023-11-10 05:50:50 [http-nio-8080-exec-2] INFO  com.hcc.GetAssignmentsByUserActivity - INSIDE GET ASSIGNMENTS BY USER CONTROLLER -----
+2023-11-10 05:52:00 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:52:00 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:52:00 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@38960e24
+2023-11-10 05:52:00 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@5c494501]
+2023-11-10 05:52:00 [http-nio-8080-exec-4] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 05:52:10 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:52:10 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:52:10 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@74d86102
+2023-11-10 05:52:10 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@5e03cc46]
+2023-11-10 05:52:10 [http-nio-8080-exec-6] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 05:57:21 [http-nio-8080-exec-8] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:57:39 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:57:46 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 05:58:37 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:58:37 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:58:37 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@5df25dbc
+2023-11-10 05:58:37 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@6705658e]
+2023-11-10 05:58:37 [http-nio-8080-exec-2] INFO  com.hcc.GetAssignmentsByUserActivity - INSIDE GET ASSIGNMENTS BY USER CONTROLLER -----
+2023-11-10 05:59:02 [http-nio-8080-exec-5] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:59:02 [http-nio-8080-exec-5] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:59:02 [http-nio-8080-exec-5] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@715cecad
+2023-11-10 05:59:02 [http-nio-8080-exec-5] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@384ef590]
+2023-11-10 05:59:02 [http-nio-8080-exec-5] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 05:59:08 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:59:08 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 05:59:08 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@7cd66788
+2023-11-10 05:59:08 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@2575e996]
+2023-11-10 05:59:08 [http-nio-8080-exec-3] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 05:59:19 [http-nio-8080-exec-4] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer
+2023-11-10 05:59:52 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTQwMTEzOCwiZXhwIjoxNjk5NDUxMjAzfQ.UYMYwO0U9ubTbGaTMnw9nocnIaiM2GbYnUhPZaL8DHo
+2023-11-10 05:59:52 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-11-08T13:46:43Z. Current time: 2023-11-10T10:59:52Z, a difference of 162789212 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:448)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:550)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:610)
+	at com.hcc.utils.JwtUtil.getAllClaimsFromToken(JwtUtil.java:49)
+	at com.hcc.utils.JwtUtil.getClaimFromToken(JwtUtil.java:39)
+	at com.hcc.utils.JwtUtil.getUsernameFromToken(JwtUtil.java:29)
+	at com.hcc.filters.jwtFilter.doFilterInternal(jwtFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-10 06:00:13 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzg0MSwiZXhwIjoxNjk5NjYzOTA3fQ.EFkUaw1yinf3t0Au9JcbnctZeNOobzKlRtRYBcnBo84
+2023-11-10 06:00:13 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzg0MSwiZXhwIjoxNjk5NjYzOTA3fQ.EFkUaw1yinf3t0Au9JcbnctZeNOobzKlRtRYBcnBo84
+2023-11-10 06:00:13 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@509afdba
+2023-11-10 06:00:13 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@21709196]
+2023-11-10 06:00:13 [http-nio-8080-exec-7] INFO  com.hcc.PutAssignmentActivity - INSIDE UPDATE ASSIGNMENT BY ID CONTROLLER -----
+2023-11-10 06:08:54 [http-nio-8080-exec-10] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 06:09:10 [http-nio-8080-exec-1] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 06:09:16 [http-nio-8080-exec-2] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> null
+2023-11-10 06:11:21 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 06:11:21 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxMzI2MywiZXhwIjoxNjk5NjYzMzI5fQ.nXZlQISUMN6KcA3sldHhtznKswUkuW6Oxe6MUc3JHEM
+2023-11-10 06:11:21 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@25dfb1ef
+2023-11-10 06:11:21 [http-nio-8080-exec-3] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@614aaf67]
+2023-11-10 06:11:21 [http-nio-8080-exec-3] INFO  com.hcc.GetAssignmentsByUserActivity - INSIDE GET ASSIGNMENTS BY USER CONTROLLER -----
+2023-11-10 06:11:45 [http-nio-8080-exec-6] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer
+2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxNDUzNCwiZXhwIjoxNjk5NjY0NTk5fQ.Uo06kNtnDL4MhTDe8uVln1btRGijXAgNbB2F82cIh0A
+2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxNDUzNCwiZXhwIjoxNjk5NjY0NTk5fQ.Uo06kNtnDL4MhTDe8uVln1btRGijXAgNbB2F82cIh0A
+2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@b0c9c5f

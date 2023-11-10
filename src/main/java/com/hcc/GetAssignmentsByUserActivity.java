@@ -34,13 +34,13 @@ public class GetAssignmentsByUserActivity {
             assignments = assignmentDAO.getAssignmentsByUser(userRequest.getUserId());
         } catch (SQLException e) {
             e.printStackTrace();
-            // You may want to return a more user-friendly error response
+
         }
 
         return assignments;
     }
 
-    // Helper class to map the JSON body to a Java object
+
     public static class UserRequest {
         private Long userId;
 

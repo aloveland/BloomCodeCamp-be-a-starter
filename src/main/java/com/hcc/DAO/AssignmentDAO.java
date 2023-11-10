@@ -139,7 +139,7 @@ public class AssignmentDAO {
             } else {
                 throw new IllegalArgumentException("User and CodeReviewer cannot be null");
             }
-            preparedStatement.setString(7, assignment.getStatus()); // Set the status
+            preparedStatement.setString(7, assignment.getStatus());
             preparedStatement.setLong(8, assignment.getId());
 
             preparedStatement.executeUpdate();
@@ -171,13 +171,13 @@ public class AssignmentDAO {
                 throw new IllegalArgumentException("User and CodeReviewer cannot be null");
             }
 
-            // Set values for the review_video_url and status columns if needed
+
             preparedStatement.setString(7, assignment.getReviewVideoUrl());
             preparedStatement.setString(8, assignment.getStatus());
 
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                assignment.setId(resultSet.getLong(1));  // set the generated id back to the assignment object
+                assignment.setId(resultSet.getLong(1));
             }
 
         } catch (SQLException e) {
