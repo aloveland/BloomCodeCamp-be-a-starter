@@ -311,3 +311,5 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2023-11-08T13:46:43Z. Curren
 2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - HEADER: ---->> Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxNDUzNCwiZXhwIjoxNjk5NjY0NTk5fQ.Uo06kNtnDL4MhTDe8uVln1btRGijXAgNbB2F82cIh0A
 2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - TOKEN---> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbG92ZSIsInNjb3BlcyI6W3siYXV0aG9yaXR5IjoiTEVBUk5FUl9ST0xFIn0seyJhdXRob3JpdHkiOiJDT0RFX1JFVklFV0VSX1JPTEUifV0sImlhdCI6MTY5OTYxNDUzNCwiZXhwIjoxNjk5NjY0NTk5fQ.Uo06kNtnDL4MhTDe8uVln1btRGijXAgNbB2F82cIh0A
 2023-11-10 06:12:01 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - userDetails---> com.hcc.entities.User@b0c9c5f
+2023-11-10 06:12:02 [http-nio-8080-exec-7] INFO  com.hcc.filters.jwtFilter - Optional[com.hcc.entities.User@5c653525]
+2023-11-10 06:12:02 [http-nio-8080-exec-7] INFO  com.hcc.GetAssignmentByIdActivity - INSIDE GET ASSIGNMENT BY ID CONTROLLER -----
