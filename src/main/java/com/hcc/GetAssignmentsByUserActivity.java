@@ -1,7 +1,9 @@
 package com.hcc;
 
 import com.hcc.DAO.AssignmentDAO;
+import com.hcc.DAO.UserDAO;
 import com.hcc.entities.Assignment;
+import com.hcc.entities.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -22,16 +24,22 @@ public class GetAssignmentsByUserActivity {
     private static final Logger logger = LoggerFactory.getLogger(GetAssignmentsByUserActivity.class);
 
     private AssignmentDAO assignmentDAO;
+    private UserDAO userDAO;
 
     @PostMapping
     public List<Assignment> getAssignmentsByUser(@RequestBody UserRequest userRequest) {
-        logger.info("INSIDE GET ASSIGNMENTS BY USER CONTROLLER -----");
+        logger.info("INSIDE GET ASSIGNMENTS BY USER CONTROLLER ----- {}", userRequest.getUsername());
+
 
         List<Assignment> assignments = null;
 
         try (Connection connection = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD)) {
             assignmentDAO = new AssignmentDAO(connection);
-            assignments = assignmentDAO.getAssignmentsByUser(userRequest.getUserId());
+            userDAO = new UserDAO(connection);
+            User user = userDAO.getUserByUsername(userRequest.getUsername());
+            logger.info("USER PRINT----- {}", user);
+            assignments = assignmentDAO.getAssignmentsByUser(user.getId());
+
         } catch (SQLException e) {
             e.printStackTrace();
 
@@ -43,6 +51,13 @@ public class GetAssignmentsByUserActivity {
 
     public static class UserRequest {
         private Long userId;
+        private String username;
+        public String getUsername(){
+            return username;
+        }
+        public void setUsername(String username){
+            this.username = username;
+        }
 
         public Long getUserId() {
             return userId;

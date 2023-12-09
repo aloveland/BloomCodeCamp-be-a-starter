@@ -114,4 +114,5 @@ public class User implements UserDetails, GrantedAuthority {
     public String getAuthority() {
         return null;
     }
+
 }

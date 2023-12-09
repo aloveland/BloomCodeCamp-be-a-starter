@@ -43,7 +43,7 @@ public class PutAssignmentActivity {
             existingAssignment.setReviewVideoUrl(updatedAssignment.getReviewVideoUrl());
             existingAssignment.setStatus(updatedAssignment.getStatus());
 
-
+            logger.info("TO UPDATE {} -----", existingAssignment.toString());
             Assignment savedAssignment = assignmentDAO.updateAssignment(existingAssignment);
 
             return savedAssignment;

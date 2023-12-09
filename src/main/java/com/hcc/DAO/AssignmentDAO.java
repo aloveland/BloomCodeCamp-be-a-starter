@@ -1,9 +1,12 @@
 package com.hcc.DAO;
 
+import com.hcc.GetAssignmentsByUserActivity;
 import com.hcc.entities.Assignment;
 import com.hcc.entities.User;
 import com.hcc.exceptions.AuthenticationException;
 import com.hcc.exceptions.ResourceNotFoundException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.expression.spel.ast.Assign;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
@@ -19,12 +22,15 @@ public class AssignmentDAO {
     private Connection connection;
     private UserDAO userDAO;
 
+    private static final Logger logger = LoggerFactory.getLogger(GetAssignmentsByUserActivity.class);
+
     public AssignmentDAO(Connection connection) {
         this.connection = connection;
         userDAO = new UserDAO(connection);
     }
 
     public List<Assignment> getAssignmentsByUser(Long user) {
+        logger.info("USER ->: {} ", user);
         List<Assignment> results = new ArrayList<>();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM assignments WHERE user_id = ?")) {
             preparedStatement.setLong(1, user);
@@ -48,6 +54,7 @@ public class AssignmentDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        logger.info("RESULTS ->: {} ", results);
         return results;
     }
 
@@ -73,6 +80,29 @@ public class AssignmentDAO {
         }
         return results.get(0);
     }
+    public List<Assignment> getAssignmentsByReviewId(Long codeReviewerId) {
+        List<Assignment> results = new ArrayList<>();
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM assignments WHERE code_reviewer_id = ?")) {
+            preparedStatement.setLong(1, codeReviewerId);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Assignment assignment = new Assignment();
+                assignment.setId(resultSet.getLong("id"));
+                assignment.setBranch(resultSet.getString("branch"));
+                assignment.setReviewVideoUrl(resultSet.getString("code_review_video_url"));
+                assignment.setGithubUrl(resultSet.getString("github_url"));
+                assignment.setNumber(resultSet.getInt("number"));
+                assignment.setUserId(resultSet.getLong("user_id"));
+                assignment.setCodeReviewerId(resultSet.getLong("code_reviewer_id"));
+                assignment.setStatus(resultSet.getString("status"));
+                results.add(assignment);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return results; // Return the list of assignments
+    }
+
 
     public Assignment putAssignment(Assignment assignment) {
 

@@ -25,25 +25,25 @@ class BackendApplicationTests {
 
 	@Test
 	void updateAssignment() throws SQLException {
-		// Establish a connection to your database
+		
 		Connection connection = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD);
 		assignmentDAO = new AssignmentDAO(connection);
 
-		// Create an instance of AssignmentDAO
+
 		assignmentDAO = new AssignmentDAO(connection);
 
-		// Prepare your test data
+
 		Assignment existingAssignment = assignmentDAO.getAssignmentById(1L);
 		existingAssignment.setBranch("newBranch");
 
-		// Call the method under test
+
 		Assignment updatedAssignment = assignmentDAO.updateAssignment(existingAssignment);
 
-		// Assert the outcome
+
 		assertNotNull(updatedAssignment);
 		assertEquals("newBranch", updatedAssignment.getBranch());
 
-		// Close the connection
+
 		connection.close();
 	}
 
